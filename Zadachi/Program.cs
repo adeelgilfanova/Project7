@@ -88,8 +88,15 @@ namespace Zadachi
     {
         static void Otvet(Type a, Type b)
         {
-            if (a.IsSubclassOf(b)) { Console.WriteLine("Yes"); } // проверяем является ли классы наследниками друг друга
-            else { Console.WriteLine("No"); }
+            if (a.IsSubclassOf(b))
+            {
+                Console.WriteLine("Yes");
+            }
+            // проверяем является ли классы наследниками друг друга
+            else
+            {
+                Console.WriteLine("No");
+            }
         }
         static void Main(string[] args)
         {
