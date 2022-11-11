@@ -117,39 +117,39 @@ namespace Project7
         }
         static void Main()
         {
-            //Console.WriteLine("Упражнение8.1");
-            //AccountType accountType = AccountType.Current;
-            //Bank bank1 = new Bank("764HGS78", 1000, AccountType.Savings);
-            //Bank bank2 = new Bank("386vfb3", 2000, AccountType.Current);
-            //Console.WriteLine("Какую сумму хотите перевести из первого банка во второй?");
-            //int monney = Convert.ToInt32(Console.ReadLine());
-            //bank1.moneytransfer(bank2, monney);
-            //Console.WriteLine(bank1);
-            //Console.WriteLine(bank2);
-            //Console.ReadKey();
+            Console.WriteLine("Упражнение8.1");
+            AccountType accountType = AccountType.Current;
+            Bank bank1 = new Bank("764HGS78", 1000, AccountType.Savings);
+            Bank bank2 = new Bank("386vfb3", 2000, AccountType.Current);
+            Console.WriteLine("Какую сумму хотите перевести из первого банка во второй?");
+            int monney = Convert.ToInt32(Console.ReadLine());
+            bank1.moneytransfer(bank2, monney);
+            Console.WriteLine(bank1);
+            Console.WriteLine(bank2);
+            Console.ReadKey();
 
-            //Console.WriteLine("\nУпражнение8.2");
-            //string s = "фбвгдежзимнклн";
-            //Console.WriteLine($"Изначальная строка: {s}\nПеревернутая: {s.Reverse()}");
+            Console.WriteLine("\nУпражнение8.2");
+            string s = "фбвгдежзимнклн";
+            Console.WriteLine($"Изначальная строка: {s}\nПеревернутая: {s.Reverse()}");
 
-            //Console.WriteLine("\nУпражнение8.3");
-            //const string outputFileName = "ResultText.out";
-            //string inputFileName = string.Empty;
+            Console.WriteLine("\nУпражнение8.3");
+            const string outputFileName = "ResultText.out";
+            string inputFileName = string.Empty;
 
-            //Console.WriteLine("Введите название входного файла: ");
-            //inputFileName = Console.ReadLine();
+            Console.WriteLine("Введите название входного файла: ");
+            inputFileName = Console.ReadLine();
 
-            //if (File.Exists(inputFileName))
-            //{
-            //    File.WriteAllText(outputFileName, File.ReadAllText(inputFileName, Encoding.UTF8).ToUpper(), Encoding.UTF8);
-            //    Console.WriteLine("Результат успешно записан в файл с именем \"{0}\"", outputFileName);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Файл с именем \"{0}\" не найден!", inputFileName);
-            //}
+            if (File.Exists(inputFileName))
+            {
+                File.WriteAllText(outputFileName, File.ReadAllText(inputFileName, Encoding.UTF8).ToUpper(), Encoding.UTF8);
+                Console.WriteLine("Результат успешно записан в файл с именем \"{0}\"", outputFileName);
+            }
+            else
+            {
+                Console.WriteLine("Файл с именем \"{0}\" не найден!", inputFileName);
+            }
 
-            //Console.ReadKey();
+            Console.ReadKey();
 
             Console.WriteLine("Упражнение8.4");
             Temperature t = new Temperature(50);
